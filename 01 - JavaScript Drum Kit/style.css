@@ -1,4 +1,4 @@
-* {
+html {
   font-size: 10px;
   background: url('./background.jpg') bottom center;
   background-size: cover;
@@ -21,6 +21,7 @@
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
   transition: all 0.07s ease;
+  animation-play-state: running;
   width: 10rem;
   text-align: center;
   color: white;
