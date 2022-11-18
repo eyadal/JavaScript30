@@ -27,16 +27,20 @@ body {
     inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.clock-face{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform: translate(-3px);
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translate(-3px);
 }
-.hand{
-    width: 50%;
-    height: 6px;
-    background:black;
-    position: absolute;
-    top:50%;
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
