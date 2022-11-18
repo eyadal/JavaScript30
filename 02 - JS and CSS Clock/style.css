@@ -5,7 +5,8 @@ html {
   text-align: center;
   font-size: 10px;
 }
-
+img {
+}
 body {
   margin: 0;
   font-size: 2rem;
@@ -18,6 +19,7 @@ body {
 .clock {
   width: 30rem;
   height: 30rem;
+  top: -120px;
   border: 20px solid white;
   border-radius: 50%;
   margin: 50px auto;
@@ -36,11 +38,16 @@ body {
 .hand {
   width: 50%;
   height: 6px;
-  background: black;
+  background: rgba(0, 0, 0, 0.812);
+  border-start-start-radius: 70%;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hour-hand {
+  width: 40%;
+  left: 10%;
 }
